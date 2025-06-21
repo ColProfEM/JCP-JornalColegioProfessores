@@ -38,3 +38,6 @@ O Jornal Colégio Professores é uma plataforma online desenvolvida para compart
 ## 💻 Equipe Técnica
 - Gabrieli dos Santos Dalzotto
 - João Vitor Pires
+
+## 📜 Licença
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
