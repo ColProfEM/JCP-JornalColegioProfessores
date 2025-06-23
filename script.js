@@ -19,7 +19,7 @@ function createNewsSection(
     <a href="${linkUrl}">
         <img src="${imgUrl}" alt="Imagem da Notícia">
         <h2 class="${theme}">${title}</h2>
-        <p>${description}</p>
+        <span>${description}</span>
     </a>
     `;
 
