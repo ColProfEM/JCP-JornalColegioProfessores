@@ -13,12 +13,12 @@ function createNewsSection(
 ) {
     const section = document.createElement("section");
     section.id = id;
-    section.className = "container";
+    section.className = `container ${theme}`;
 
     section.innerHTML = `
     <a href="${linkUrl}">
         <img src="${imgUrl}" alt="Imagem da Notícia">
-        <h2 class="${theme}">${title}</h2>
+        <h2>${title}</h2>
         <span>${description}</span>
     </a>
     `;
@@ -111,9 +111,9 @@ const newsData = [
     },
 ];
 
-const newsContainer = document.getElementById("news_container");
+const newsContainer = document.getElementById("news_containers");
 
-newsData.forEach((news, index) => {
+newsData.forEach((news) => {
     const section = createNewsSection(
         news.id,
         news.imgUrl,
@@ -123,4 +123,36 @@ newsData.forEach((news, index) => {
         news.linkUrl
     );
     newsContainer.appendChild(section);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    var filterLinks = document.querySelectorAll(".filter-link");
+
+    filterLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const theme = this.dataset.theme;
+            const allNewsCards = document.querySelectorAll(".container");
+
+            if (theme === "all") {
+                // Mostra todas as notícias
+                allNewsCards.forEach((card) => {
+                    card.style.display = "block";
+                });
+            } else {
+                // Esconde todas primeiro
+                allNewsCards.forEach((card) => {
+                    card.style.display = "none";
+                });
+
+                // Mostra apenas as do tema selecionado
+                const themeCards = document.querySelectorAll(
+                    `.container.${theme}`
+                );
+                themeCards.forEach((card) => {
+                    card.style.display = "block";
+                });
+            }
+        });
+    });
 });

@@ -84,7 +84,7 @@ header h1 {
     padding: 10px;
 }
 
-#news_container {
+#news_containers {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +92,7 @@ header h1 {
     padding-top: 9vh;
 }
 
-#news_container.hidden {
+#news_containers.hidden {
     display: none;
 }
 
@@ -152,25 +152,43 @@ footer a {
     text-decoration: none;
 }
 
+/* Layout para Computadores */
+
+@media (min-width: 1024px) {
+    .container {
+        width: 800px;
+        margin: 0 auto 1vh;
+    }
+
+    .container a {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        height: 450px;
+        text-decoration: none;
+        color: #000;
+    }
+}
+
 /* Classes das Categorias */
 
-.acolhimento {
+.acolhimento h2 {
     background: #0cc6f5cc;
 }
 
-.cultura {
+.cultura h2 {
     background: #32a151cc;
 }
 
-.esporte {
+.esporte h2 {
     background: #f07518cc;
 }
 
-.evento {
+.evento h2 {
     background: #790cb0cc;
 }
 
-.outro {
+.outro h2 {
     background: #faed3ccc;
 }
 
