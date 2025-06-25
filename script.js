@@ -1,7 +1,11 @@
+// Liga/Desliga o Menu Lateral
+
 document.getElementById("menu_btn").addEventListener("click", function () {
     document.getElementById("menu_btn").classList.toggle("active");
     document.getElementById("sidebar").classList.toggle("active");
 });
+
+// Cria o elemento html Section (Card das Notícias)
 
 function createNewsSection(
     id,
@@ -25,6 +29,8 @@ function createNewsSection(
 
     return section;
 }
+
+// Lista que contém as informações dos Cards
 
 const newsData = [
     {
@@ -124,6 +130,8 @@ newsData.forEach((news) => {
     );
     newsContainer.appendChild(section);
 });
+
+// Separa os cards por categoria
 
 document.addEventListener("DOMContentLoaded", function () {
     var filterLinks = document.querySelectorAll(".filter-link");
