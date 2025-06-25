@@ -152,24 +152,6 @@ footer a {
     text-decoration: none;
 }
 
-/* Layout para Computadores */
-
-@media (min-width: 1024px) {
-    .container {
-        width: 800px;
-        margin: 0 auto 1vh;
-    }
-
-    .container a {
-        position: relative;
-        display: block;
-        overflow: hidden;
-        height: 450px;
-        text-decoration: none;
-        color: #000;
-    }
-}
-
 /* Classes das Categorias */
 
 .acolhimento h2 {
@@ -219,4 +201,42 @@ footer a {
     text-align: justify;
     text-indent: 35px;
     line-height: 1.5;
+}
+
+#sobre-nos h3,
+#sobre-nos h4,
+#sobre-nos p,
+#sobre-nos ul {
+    margin-bottom: 20px;
+}
+
+#sobre-nos ul {
+    margin-left: 20px;
+    list-style: circle;
+}
+
+/* Layout para Computadores */
+
+@media (min-width: 1024px) {
+    .container {
+        width: 800px;
+        margin: 0 auto 1vh;
+    }
+
+    .container a {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        height: 450px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    #page_main article {
+        margin: 20px 20vw;
+        font-size: 1.2rem;
+        text-align: justify;
+        text-indent: 35px;
+        line-height: 1.5;
+    }
 }
