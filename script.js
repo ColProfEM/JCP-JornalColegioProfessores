@@ -34,6 +34,22 @@ function createNewsSection(
 
 const newsData = [
     {
+        id: "ser_lgbt+_no_brasil_ainda_e_resitir",
+        imgUrl: "https://picsum.photos/400/200",
+        theme: "cultura",
+        title: "Ser LGBT+ no Brasil Ainda é Resistir",
+        description: "Artigo de opnião por Rafael del Antonio",
+        linkUrl: "./pages/ser-lgbt+-no-brasil-ainda-e-resistir.html",
+    },
+    {
+        id: "arraia_interno",
+        imgUrl: "./img/capas/arraia-interno.png",
+        theme: "evento",
+        title: "Arraiá Interno",
+        description: "Apresentações, brincadeiras e comemoração marcam a festa \"Julina\" do Colégio Professores",
+        linkUrl: "./pages/arraia-interno.html",
+    },
+    {
         id: "bullying_velado",
         imgUrl: "https://picsum.photos/400/200",
         theme: "cultura",
