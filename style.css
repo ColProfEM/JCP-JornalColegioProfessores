@@ -215,6 +215,19 @@ footer a {
     list-style: circle;
 }
 
+#galeria {
+    margin-top: 20px;
+    column-count: 3;
+    column-gap: 10px;
+}
+
+#galeria img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 /* Layout para Computadores */
 
 @media (min-width: 1024px) {
@@ -232,7 +245,7 @@ footer a {
         color: #000;
     }
 
-    #page_main article {
+    #page_main {
         margin: 20px 20vw;
         font-size: 1.2rem;
         text-align: justify;
