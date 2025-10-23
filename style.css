@@ -228,6 +228,10 @@ footer a {
     margin-bottom: 10px;
 }
 
+#qrcode {
+    display: none;
+}
+
 /* Layout para Computadores */
 
 @media (min-width: 1024px) {
@@ -251,5 +255,16 @@ footer a {
         text-align: justify;
         text-indent: 35px;
         line-height: 1.5;
+    }
+
+    #qrcode {
+        display: flex;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    #qrcode img {
+        width: 200px;
     }
 }
